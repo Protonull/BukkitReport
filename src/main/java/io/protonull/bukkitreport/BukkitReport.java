@@ -6,10 +6,10 @@ import vg.civcraft.mc.civmodcore.ACivMod;
 
 public final class BukkitReport extends ACivMod {
 
-	@Override
-	public void onEnable() {
-		new Materials(this);
-		new Tags(this);
-	}
+    @Override
+    public void onEnable() {
+        new Materials(this);
+        new Tags(this);
+    }
 
 }
