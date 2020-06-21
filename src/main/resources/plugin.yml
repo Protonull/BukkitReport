@@ -1,0 +1,7 @@
+name: BukkitReport
+version: ${project.version}
+main: io.protonull.bukkitreport.BukkitReport
+api-version: 1.14
+depend: [CivModCore]
+authors: [Protonull]
+description: Creates report files of Bukkit 
