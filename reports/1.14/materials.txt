@@ -467,8 +467,6 @@ hasGravity():
 	GRAVEL
 	ANVIL
 	CONCRETE_POWDER
-isAir():
-	AIR
 isBlock():
 	AIR
 	STONE

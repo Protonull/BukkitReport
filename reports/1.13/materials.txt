@@ -467,8 +467,6 @@ hasGravity():
 	GRAVEL
 	ANVIL
 	CONCRETE_POWDER
-isAir():
-	AIR
 isBlock():
 	AIR
 	STONE
@@ -793,7 +791,6 @@ isEdible():
 	CHORUS_FRUIT
 	BEETROOT
 	BEETROOT_SOUP
-isEmpty():
 isFlammable():
 	WOOD
 	LOG
