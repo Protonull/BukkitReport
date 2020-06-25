@@ -2,4 +2,4 @@ name: BukkitReport
 version: ${project.version}
 main: io.protonull.bukkitreport.BukkitReport
 authors: [Protonull]
-description: Creates report files of Bukkit 
+description: Creates report files of Bukkit

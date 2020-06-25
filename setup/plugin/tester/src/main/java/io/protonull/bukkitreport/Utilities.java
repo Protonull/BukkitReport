@@ -1,18 +1,11 @@
 package io.protonull.bukkitreport;
 
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.lang.reflect.Modifier;
-import java.util.Arrays;
-import org.bukkit.Material;
-
 public class Utilities {
 
     @FunctionalInterface
     public interface BoolSupplier {
         boolean get();
     }
-
 
     public static <T> boolean isNullOrEmpty(T... entries) {
         return entries == null || entries.length <= 0;
