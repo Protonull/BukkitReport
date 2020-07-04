@@ -15,9 +15,11 @@ public class Materials extends ReportMaker {
 
     @Override
     protected void makeReport() {
+        final Material[] materials = Material.values();
+        Arrays.sort(materials, 0, materials.length, Comparator.comparing(Enum::name));
         // Report All Materials
         addLine("Materials:");
-        for (Material material : Material.values()) {
+        for (Material material : materials) {
             addLine("\t" + material.name());
         }
         // Report all "is" method checkers
@@ -42,7 +44,7 @@ public class Materials extends ReportMaker {
                 })
                 .sorted(Comparator.comparing(Method::getName)).forEachOrdered(method -> {
                     addLine(method.getName() + "():");
-                    for (Material material : Material.values()) {
+                    for (Material material : materials) {
                         boolean result = false;
                         try {
                             result = (boolean) method.invoke(material);
