@@ -15,8 +15,7 @@ public class Materials extends ReportMaker {
 
     @Override
     protected void makeReport() {
-        final Material[] materials = Material.values();
-        Arrays.sort(materials, 0, materials.length, Comparator.comparing(Enum::name));
+        final Material[] materials = getMaterials();
         // Report All Materials
         addLine("Materials:");
         for (Material material : materials) {
@@ -58,6 +57,12 @@ public class Materials extends ReportMaker {
                         addLine("\t" + material.name());
                     }
                 });
+    }
+
+    public static Material[] getMaterials() {
+        final Material[] materials = Material.values();
+        Arrays.sort(materials, 0, materials.length, Comparator.comparing(Enum::name));
+        return materials;
     }
 
 }

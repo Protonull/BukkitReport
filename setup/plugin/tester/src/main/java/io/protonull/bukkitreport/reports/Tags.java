@@ -19,6 +19,7 @@ public class Tags extends ReportMaker {
     @Override
     @SuppressWarnings("unchecked")
     protected void makeReport() {
+        final Material[] materials = Materials.getMaterials();
         Map<String, List<Material>> tags = Maps.newHashMap();
         Arrays.stream(Tag.class.getDeclaredFields())
                 .forEachOrdered(field -> {
@@ -40,7 +41,7 @@ public class Tags extends ReportMaker {
                         return;
                     }
                     List<Material> tagged = Lists.newArrayList();
-                    for (Material material : Material.values()) {
+                    for (Material material : materials) {
                         if (tag.isTagged(material)) {
                             tagged.add(material);
                         }
