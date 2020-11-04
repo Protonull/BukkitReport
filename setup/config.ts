@@ -14,6 +14,9 @@ export default {
     paper: "https://papermc.io/api/v1/paper/%s/latest/download",
 
     versions: [
+        ["1.16.4", "1.16"],
+        ["1.16.3", "1.16"],
+        ["1.16.2", "1.16"],
         ["1.16.1", "1.16"],
         ["1.15.2", "1.15"],
         ["1.15.1", "1.15"],
